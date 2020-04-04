@@ -23,6 +23,7 @@ function(){
     Route::put('posts/{post}','PostsController@update')->name('admin.posts.update');
     
     Route::post('posts/{post}/photos','PhotosController@store')->name('admin.posts.photos.store');
+    Route::delete('post/{photo}','PhotosController@destroy')->name('admin.photos.destroy');
 
     //rutas de administracion
 
